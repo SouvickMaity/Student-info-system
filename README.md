@@ -1,4 +1,7 @@
 
+DEMO : admin@example.com
+password: password123
+
 Student Information System — MERN Mini Project
 A modern, responsive, animated Student Information System built with the MERN stack using JavaScript, React, Node.js, Express, MongoDB, and pure CSS.
 
