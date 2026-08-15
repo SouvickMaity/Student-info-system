@@ -13,6 +13,16 @@
   "devDependencies": {
     "concurrently": "^9.0.0"
   },
-  "author": "Soham Kundu",
-  "license": "ISC"
+  "author": "",
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SouvickMaity/Student-info-system.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/SouvickMaity/Student-info-system/issues"
+  },
+  "homepage": "https://github.com/SouvickMaity/Student-info-system#readme"
 }

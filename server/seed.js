@@ -6,9 +6,10 @@ import Student from './models/Student.js';
 
 dotenv.config();
 
-const seedData = async () => {
+ const seedData = async () => {
   try {
     // Connect to MongoDB
+   // console.log('Connecting to MongoDB for seeding...');
     await mongoose.connect(process.env.MONGO_URI);
     console.log('Connected to MongoDB for seeding...');
 
@@ -155,4 +156,4 @@ const seedData = async () => {
   }
 };
 
-seedData();
+ export default seedData;

@@ -4,13 +4,14 @@ import dotenv from 'dotenv';
 import connectDB from './config/db.js';
 import authRoutes from './routes/authRoutes.js';
 import studentRoutes from './routes/studentRoutes.js';
+//import seedData from './seed.js';
 
 // Load environment variables
 dotenv.config();
 
 // Initialize Express
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT||5000;
 
 // Connect to MongoDB
 connectDB();
@@ -26,6 +27,8 @@ app.use(express.urlencoded({ extended: true }));
 // API Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/students', studentRoutes);
+//seedData(); // Seed the database with demo data
+
 
 // Base route
 app.get('/', (req, res) => {
@@ -66,3 +69,5 @@ app.listen(PORT, () => {
   console.log(`\n🚀 Server running on http://localhost:${PORT}`);
   console.log(`📦 Environment: ${process.env.NODE_ENV || 'development'}\n`);
 });
+
+
