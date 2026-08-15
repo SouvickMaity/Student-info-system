@@ -42,6 +42,27 @@ const Login = () => {
       <div className="card" style={{ width: '100%', maxWidth: '400px' }}>
         <h2 style={{ textAlign: 'center', marginBottom: '1.5rem', color: 'var(--primary)' }}>SIS Login</h2>
         
+        <div
+            style={{
+              backgroundColor: 'var(--bg-secondary)',
+              padding: '0.75rem 1rem',
+              marginBottom: '1rem',
+              borderRadius: '8px',
+              fontSize: '0.9rem'
+            }}
+          >
+            <strong>Demo Login</strong>
+            <div style={{ marginTop: '0.4rem' }}>
+              <div>
+                <strong>Email:</strong> admin@example.com
+              </div>
+              <div>
+                <strong>Password:</strong> password123
+              </div>
+            </div>
+          </div>
+
+
         {error && <div className="alert alert-danger" style={{ padding: '0.75rem', marginBottom: '1rem', fontSize: '0.9rem' }}>{error}</div>}
         
         <form onSubmit={handleSubmit}>
